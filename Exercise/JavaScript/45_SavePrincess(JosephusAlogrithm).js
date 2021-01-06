@@ -70,10 +70,11 @@ function solution2(str1) {
     let breakPoint = 0;
     let cnt = 0;
     while (1) {
-        
+        // pos가 n보다 커지면 arr범위를 벗어나므로 다시 1로 초기화 한다.
         if (pos > n) {
             pos = 1;
         }
+        // arr배열에 0인 애들만 loop로 돌린다.
         if (arr[pos] === 0) {
             cnt++;
             if (cnt === m) {
